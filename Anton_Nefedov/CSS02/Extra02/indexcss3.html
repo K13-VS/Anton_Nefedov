@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background-color:darkcyan;
+        }
+        .filler{
+            clear:both;
+            background-color: black;
+        }
+        .header{
+            width: 15em; background-color: red; float: left;
+        }
+        .article{
+            background-color: blue; margin-bottom: .1em; word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h4>Блок навигации</h4>
+        <ul>
+            <li>Важная Кнопка 1</li>
+            <li>Кнопка 2</li>
+            <li>Кнопка 3</li>
+        </ul>
+        <p>Очень интересный текст, чтобы заполнить блок навигации и растянуть его по максимуму</p>
+        <span>Еще одна строка всякой всячины, которая будет растягивать этот блок вниз</span>
+        <br>
+        <span>Ну и наконец, последняя строка, которая так же хорошо может растянуть блок</span>
+        <br>
+    </div>
+    <div class="wrap">
+        <div class="article">
+            <br>
+            <span><strong>Статья 1</strong></span>
+            <br>
+            <span>Тут можно представить кучу всякого текста, в котором немного рассказывают о чём-нибудь интересненьком</span>
+        </div>
+        <div class="article">
+            <h4 style="margin-top: 0.1px;">Вторая по очереди, немного менее интересная статья</h4>
+            <p style="color: gold;">Этот параграф напоминает читателям о нахождении интересной картиночки в правом нижнем углу этот синего прямоугольника</p>
+            <p>Сейчас вполне вероятно, что в целях заполнения этой статьи, снизу появится много параграфов с бессмысленным текстом</p>
+            <p>Вот, например, первый</p>
+            <p>Конечно, чёрный цвет не очень хорошо видно на синем фоне, постараюсь это исправить</p>
+            <p style="color: white;">А вот так вполне хорошо</p>
+            <div align="right"><img width="50px" height="50px" src="https://images.seeklogo.com/logo-png/25/2/mail-envelope-symbol-logo-png_seeklogo-254303.png" alt="yo"></div>
+        </div>
+        <div class="filler"></div>
+    </div>
+    <div style="background-color: green;">
+        <span>А вот здесь подвал</span>
+        <p>Зимой здесь волшебным образом появляются закатанные банки с огурцами</p>
+    </div>
+</body>
+</html>
