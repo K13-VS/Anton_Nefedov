@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New stuff</title>
+  <style>
+    
+*{
+    box-sizing: border-box;}
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .menu-container {
+      display: inline-flex;
+      border: 1px solid #888;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      position: relative;
+      border-left: 1px solid #888;
+      border-top: 1px solid #888;
+      background: #eee;
+      padding: 10px;
+      cursor: pointer;
+      min-width: 100px;
+      text-align: center;
+    }
+
+    .menu li:last-child {
+      border-right: 1px solid #888;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      flex-direction: column;
+      background: #dfe6e9;
+      border: 1px solid #888;
+      z-index: 10;
+      min-width: 100px;
+    }
+    .menu li:hover .submenu {
+      display: flex;
+    }
+    .submenu div {
+      padding: 8px;
+      border-top: 1px solid #bbb;
+    }
+    @media (max-width: 700px) {
+      .menu-container {
+        display: block;
+        width: fit-content;
+      }
+
+      .menu {
+        flex-direction: column;
+      }
+
+      .menu li {
+        border-right: 1px solid #888;
+      }
+      .submenu {
+        top: 0;
+        left: 100%;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <div class="menu-container">
+  <ul class="menu">
+    <li>Понедельник
+      <div class="submenu">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+      </div>
+    </li>
+    <li>Вторник
+      <div class="submenu">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+      </div>
+    </li>
+    <li>Среда
+      <div class="submenu">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+      </div>
+    </li>
+    <li>Четверг
+      <div class="submenu">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+      </div>
+    </li>
+    <li>Пятница
+      <div class="submenu">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+      </div>
+    </li>
+    <li>Суббота
+      <div class="submenu">
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
